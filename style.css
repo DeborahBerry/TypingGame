@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.level-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 5px 0 5px rgba(255, 255, 255, 0.8);
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
+.level-container.hide {
+    transform: translateY(-100%);
+  }
+  
+
+label {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+#level {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 17px;
+  appearance: none;
+ 
+}
+
+
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 400px;
+  height: 300px;
+  background-color: black;
+
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3),
+    -2px -2px 5px rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1 {
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgba(41, 39, 39, 0.2);
+  width: 90%;
+  position: absolute;
+  top: 20px;
+}
+
+small {
+  margin-top: 60px;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 80px;
+  font-size: 17px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.word-to-type {
+  font-size: 40px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.typed-word {
+  padding: 10px;
+  width: 70%;
+  outline: none;
+  border: none;
+}
+
+.typed-word:focus {
+  outline: 2px solid rgb(110, 158, 246);
+}
+
+.level-toggle-btn {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: white;
+  background-color: rgb(2, 19, 19);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 2px rgba(231, 233, 233, 0.3),
+    -5px -5px 2px rgba(231, 233, 233, 0.3);
+
+  transition: all 0.5s;
+}
+
+.level-toggle-btn:active {
+  box-shadow: 0px 0px 0px transparent;
+}
+
+.game-over-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  box-shadow: inherit;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+  display: none;
+}

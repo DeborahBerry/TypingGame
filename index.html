@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Game</title>
+</head>
+<body>
+    <div class="level-container">
+        <form>
+            <div>
+                <label for="difficulty">Game Level</label>
+                <select id="level">
+                    <option value="easy">Easy</option>
+                    <option value="midium">Midium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </form>
+
+        
+
+    </div>
+
+    <div class="game-container">
+        <h1>🚀Speed Typer🚀</h1>
+        <div class="time">Time Left: 10s</div>
+        <div class="score">Score:0</div>
+        <small>Type The Following:</small>
+        <p class="word-to-type">Text</p>
+        <input type="text" class="typed-word" placeholder="Type the word...">
+        <div class="game-over-container"></div>
+    </div>
+    <button class="level-toggle-btn">🕸</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
