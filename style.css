@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-
   box-sizing: border-box;
 }
 
@@ -31,7 +30,6 @@ body {
     transform: translateY(-100%);
   }
   
-
 label {
   font-size: 18px;
   text-transform: capitalize;
@@ -48,8 +46,6 @@ label {
   appearance: none;
  
 }
-
-
 .game-container {
   position: absolute;
   top: 50%;
@@ -63,7 +59,6 @@ label {
   box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3),
     -2px -2px 5px rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-
   display: flex;
   justify-content: center;
   align-items: center;
