@@ -27,4 +27,4 @@ An interactive **Typing Speed Game** built with Vanilla JavaScript, HTML, and CS
 
 This project is a fully functional game built without any external libraries. 
 
-**You’re welcome to fork, modify, or expand it!**
+**🤝 You’re welcome to fork, modify, or expand it!**
